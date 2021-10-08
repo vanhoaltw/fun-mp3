@@ -1,0 +1,50 @@
+.list_contain{
+    height: 50%;
+    width: 100%;
+    overflow: auto;
+    margin-top: 10px;
+    -ms-overflow-style:none;
+    overflow: -moz-scrollbars-none;
+    
+}
+.list_contain::-webkit-scrollbar{
+    width: 0 !important;
+
+}
+
+.music_item{
+    margin-top: 5px;
+    height: 45px;
+    width: 100%;
+    display:grid;
+    grid-template-columns: 20% 70% 10%;
+    justify-content: center;
+    align-content: center;
+    cursor: pointer;
+    border-radius: 5px;
+    transition:all .3s ease;
+    padding: 5px;
+    overflow: hidden;
+    
+    &.active{
+        border-left: 4px solid var(--button-color);
+        background-color: var(--button-color-bg);
+    }
+    &:hover{
+       transform: translateY(-3px);
+       box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+    }
+    > div{
+        margin-top: 2px;
+        
+        &:last-child{
+            display: flex;
+            align-items: center;
+        }
+    }
+    img{
+        clip-path: circle();
+        width: 100%;
+        height: 40px;
+    }
+}

@@ -1,0 +1,47 @@
+$color-text-dark: #ffffff;
+$color-text-light: #121212;
+
+$div-dark: rgba(255, 255, 255, 0.3);
+$div-light: rgba(0, 0, 0, 0.08);
+
+$background-dark: #121212;
+$background-light: #ffffff;
+
+$button-red: #e74c3c;
+$button-green:#2ecc71;
+$button-yellow: #f1c40f;
+
+$button-red-bg:rgba(231, 76, 60,0.1);
+$button-green-bg:rgba(46, 204, 113,0.1);
+$button-yellow-bg:rgba(241, 196, 15,0.1);
+
+
+:root{
+    --color-background: #{$background-light};
+    --color-text: #{$color-text-light};
+    --color-div: #{$div-light};
+}
+
+.dark{
+    --color-background: #{$background-dark};
+    --color-text: #{$color-text-dark};
+    --color-div: #{$div-dark};
+}
+
+
+:root{
+    --button-color: #{$button-red};
+    --button-color-bg: #{$button-red-bg};
+}
+.btnRed{
+    --button-color: #{$button-red};
+    --button-color-bg: #{$button-red-bg};
+}
+.btnGreen{
+    --button-color: #{$button-green};
+    --button-color-bg: #{$button-green-bg};
+}
+.btnYellow{
+    --button-color: #{$button-yellow};
+    --button-color-bg: #{$button-yellow-bg};
+}
